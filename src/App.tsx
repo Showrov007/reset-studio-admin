@@ -19,7 +19,7 @@ import { SettingsPage } from "./pages/SettingsPage";
 const ProtectedRoute: React.FC<{ element: React.ReactElement }> = ({
   element,
 }) => {
-  const isAuthenticated = localStorage.getItem("isAuthenticated") === "true";
+  const isAuthenticated = sessionStorage.getItem("isAuthenticated") === "true";
   return isAuthenticated ? element : <Navigate to="/login" replace />;
 };
 
