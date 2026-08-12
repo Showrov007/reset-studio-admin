@@ -12,7 +12,7 @@ export const LoginPage: React.FC = () => {
     // Simple validation matching demo credentials
     if (email === "admin@resetstudio.com" && password === "admin123") {
       localStorage.setItem("isAuthenticated", "true");
-      navigate("/");
+      navigate("/overview");
     } else {
       setError("Invalid email or password");
     }
