@@ -168,7 +168,7 @@ export const MembersPage: React.FC = () => {
             </thead>
             <tbody>
               {filteredMembers.length > 0 ? (
-                filteredMembers.map((item, index) => (
+                filteredMembers.map((item) => (
                   <tr
                     key={item.id}
                     className="border-b border-[#f2efe9] text-stone-900 last:border-b-0 hover:bg-[#faf8f5] transition-colors"

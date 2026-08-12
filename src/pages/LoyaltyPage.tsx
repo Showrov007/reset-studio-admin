@@ -243,7 +243,7 @@ export const LoyaltyPage: React.FC = () => {
                         </button>
                       )}
                       <button
-                        onClick={() => handleStartEdit(item.id)}
+                        onClick={() => handleStartEdit(item)}
                         className="bg-[#fff5eb] border border-[#f3d6be] text-[#a85d2b] px-2 py-1 rounded text-[11px] cursor-pointer font-medium hover:bg-[#faebd9] transition-colors"
                       >
                         ✏️
